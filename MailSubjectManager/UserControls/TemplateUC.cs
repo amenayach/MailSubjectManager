@@ -35,7 +35,7 @@ namespace MailSubjectManager.UserControls
             {
                 BackColor = Color.Black,
                 ForeColor = Color.White,
-                Location = new Point(valuesCount * tbWidth, 12),
+                Location = new Point(valuesCount * (tbWidth + margin + lblWidth), 12),
                 Name = "tbV" + valuesCount,
                 Tag = valuesCount,
                 Size = new Size(tbWidth, 20),
@@ -48,7 +48,7 @@ namespace MailSubjectManager.UserControls
                 AutoSize = false,
                 Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0))),
                 ForeColor = Color.White,
-                Location = new Point((valuesCount+1) * (tbWidth + margin + lblWidth), 15),
+                Location = new Point(tb.Location.X + tbWidth + margin, 15),
                 Name = "lblSp" + valuesCount,
                 Tag = valuesCount,
                 Size = new Size(35, 13),
