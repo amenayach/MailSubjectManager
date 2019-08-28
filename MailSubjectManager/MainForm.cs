@@ -19,6 +19,7 @@ namespace MailSubjectManager
         public MainForm()
         {
             InitializeComponent();
+            templateUC1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         }
 
         public void Subscribe()
